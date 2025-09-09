@@ -179,6 +179,7 @@ class UnixDiscordIpcClient(DiscordIpcClient):
                 continue
             try:
                 self._sock.connect(path)
+                self._sock.settimeout(1.0)  # 1s timeout to avoid hangs
             except OSError as e:
                 pass
             except Exception as e:

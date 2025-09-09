@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="service.discord.richpresence"
   name="Discord Rich Presence Socket"
-  version="1.0.0"
+  version="1.1.0"
   provider-name="Airsane">
 <requires>
   <import addon="xbmc.python" version="3.0.0"/>

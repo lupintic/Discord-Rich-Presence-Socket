@@ -1,15 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <settings>
     <category label="32001">
-        <setting label="32002" type="bool" id="inmenu" default="true"/>
-        <setting label="32003" type="enum" id="client_id" lvalues="32004|32005"/>
+        <setting id="inmenu" type="bool" label="32034" default="false" />
+        <setting id="client_id" type="enum" label="32035" values="0" default="0" />
+        <setting id="debug_log" type="bool" label="32037" default="false" />
+        <setting id="server_ip" type="text" label="32023" default="192.168.0.100" />
+        <setting id="server_port" type="number" label="32039" default="5050" />
+        <setting id="language" type="enum" label="32041" lvalues="32043|32044" default="0" />
     </category>
-    <category label="32010">
-        <setting label="32011" type="lsep"/>
-        <setting label="32016" type="enum" id="movie_details" lvalues="32014|32013|32015"/>
-        <setting label="32012" type="enum" id="movie_state" lvalues="32013|32014|32015"/>
-        <setting label="32020" type="lsep"/>
-        <setting label="32016" type="enum" id="episode_details" lvalues="32022|32021|32013|32015"/>
-        <setting label="32012" type="enum" id="episode_state" lvalues="32021|32022|32013|32015"/>
+    <category label="32027">
+        <setting id="episode_state" type="enum" label="32025" lvalues="32029|32030|32031|32032" default="0" />
+        <setting id="episode_details" type="enum" label="32026" lvalues="32030|32029|32031" default="0" />
+    </category>
+    <category label="32028">
+        <setting id="movie_state" type="enum" label="32025" lvalues="32031|32033" default="0" />
+        <setting id="movie_details" type="enum" label="32026" lvalues="32033|32031" default="0" />
     </category>
 </settings>
