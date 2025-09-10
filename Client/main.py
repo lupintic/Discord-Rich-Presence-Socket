@@ -7,7 +7,7 @@ import struct
 import os
 
 # Debug toggle (set to False to disable logging)
-DEBUG = True
+DEBUG = False
 
 HEADER = 64
 FORMAT = 'utf-8'
